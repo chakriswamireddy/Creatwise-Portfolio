@@ -5,6 +5,8 @@ import { Link, NavLink } from 'react-router';
 import hamburger from '../assets/navbar/hamburger.svg'
 
 import '../../src/styles/hamburger.css'
+import '../../src/styles/animated-btn.css'
+
 
 function Navbar() {
     const pages = ["home", "about", "projects", "contact"];
@@ -39,7 +41,7 @@ function Navbar() {
             </nav>
 
 
-            <button className='  uppercase border rounded-[100px] px-[24px] py-[8px] gap-[10px] font-[500] leading-6 text-[12px] md:text-[14px] '>
+            <button className='fluid-btn  uppercase border rounded-[100px] px-[24px] py-[8px] gap-[10px] font-[500] leading-6 text-[12px] md:text-[14px] '>
                 Hire Me
             </button>
 
