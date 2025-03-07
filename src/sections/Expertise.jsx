@@ -11,9 +11,9 @@ function Expertise() {
 
 
     return (
-        <div className='  py-[50px] sm:py-[64px]'>
+        <div className='  py-[50px] md:py-[64px]'>
             <PageTitle pageTitle={'Expertise'} />
-            <div className='grid sm:grid-cols-2 gap-[32px] sm:gap-[64px]'>
+            <div className='grid sm:grid-cols-2 gap-[32px] sm:gap-[64px] mt-8'>
                 {expertiseParasList.map((item,i) => (
                     <ExpertisePara title={item.title} text={item.text} key={i}  />
                 ) )}

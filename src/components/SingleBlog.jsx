@@ -21,14 +21,18 @@ function SingleBlog({ blog }) {
                     <h3 className='font-[600] text-[30px] md:text-[40px] leading-[100%] tracking-[0%]'> {blog.title} </h3>
 
                     <ul className='flex flex-wrap gap-[8px]  w-full'>
-                        {blog.skills.length > 0 && blog.skills.map((skill,i) => (
-                            <SkillChip key={i}  skill={skill} />
+                        {blog.skills.length > 0 && blog.skills.map((skill, i) => (
+                            <SkillChip key={i} skill={skill} />
                         ))}
                     </ul>
 
                 </div>
                 <div className='block    lg:hidden float-right self-end ' >
-                    <ActionBtn btnTxt={'Read'} />
+                    {/* <ActionBtn btnTxt={'Read'} /> */}
+
+                    <button className='rounded-[100px]  px-[20px] sm:px-[32px] py-[5px] sm:py-[16px] bg-white gap-[10px] font-[600] text-[12px] sm:text-[14px] leading-[24px] tracking-[0%] text-dark'>
+                        Read
+                    </button>
 
                 </div>
             </div>

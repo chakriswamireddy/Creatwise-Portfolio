@@ -15,7 +15,7 @@ import wavefun from '../assets/home/wavefun.svg'
 function HeroSection() {
     return (
         <div>
-            <div className=' py-[80px]   sm:py-[176px]'>
+            <div className='pt-[150px] pb-[50px]   md:py-[176px]'>
                 <div className=''>
                     {/* hero */}
                     <div className='uppercase  text-[32px] sm:text-[52] md:text-[64px] font-[800] text-center leading-[50px] sm:leading-[60px]  md:leading-[80px] tracking-[0px] '>
@@ -23,7 +23,7 @@ function HeroSection() {
                             iam a <img src={Rectangle} alt="user1" className=' w-[98px] sm:w-[128px] h-[58px] sm:h-[64px] p-[8px] ' />
                         </span>
                         <span >FREELANCE </span>
-                        <span className='inline-flex flex-wrap items-center mr-[17px]'>
+                        <span className='inline-flex flex-wrap justify-center  items-center mr-[17px]'>
                             designer  <img src={Rectangle2} alt="user2" className=' w-[98px] sm:w-[128px] h-[58px] sm:h-[64px] m-[8px]' />
                         </span>
                         <span >From SAN FRANCISCO</span>
