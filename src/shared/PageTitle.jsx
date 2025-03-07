@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../assets/expertise/star.svg'
+import star from '../assets/expertise/starsvg.svg'
 
 function PageTitle({pageTitle}) {
     return (

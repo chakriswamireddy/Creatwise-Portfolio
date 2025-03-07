@@ -1,7 +1,7 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 
-import star from '../assets/expertise/star.svg'
+import star from '../assets/expertise/starsvg.svg'
 
 
 
