@@ -23,7 +23,7 @@ function HeroSection() {
                             iam a <img src={Rectangle} alt="user1" className=' w-[98px] sm:w-[128px] h-[58px] sm:h-[64px] p-[8px] ' />
                         </span>
                         <span >FREELANCE </span>
-                        <span className='inline-flex sm:flex-wrap items-center mr-[17px]'>
+                        <span className='inline-flex flex-wrap items-center mr-[17px]'>
                             designer  <img src={Rectangle2} alt="user2" className=' w-[98px] sm:w-[128px] h-[58px] sm:h-[64px] m-[8px]' />
                         </span>
                         <span >From SAN FRANCISCO</span>
@@ -33,9 +33,9 @@ function HeroSection() {
 
                     <div className='flex  flex-col gap-6 md:gap-0 md:flex-row justify-between  items-center mt-[112px] '>
                         <div className='flex justify-between  w-full   md:w-[716px] md:pr-[123px]'>
-                            <img src={doredesign} alt="doredesign" className='text-gray w-[136.36px] ' />
-                            <img src={wavefun} alt="wavefun" className='text-gray w-[98px] ' />
-                            <img src={simla} alt="simla" className='text-gray w-[98.91px]' />
+                            <img src={doredesign} alt="doredesign" className='text-gray w-[90px] sm:w-[136.36px] ' />
+                            <img src={wavefun} alt="wavefun" className='text-gray w-[70px] sm:w-[98px] ' />
+                            <img src={simla} alt="simla" className='text-gray w-[60px] sm:w-[98.91px]' />
 
 
                         </div>

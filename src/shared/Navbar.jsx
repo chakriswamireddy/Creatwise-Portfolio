@@ -14,7 +14,7 @@ function Navbar() {
 
 
     return (
-        <div className='flex w-full border  justify-between items-center  px-[30px] sm:px-[40px] md:px-[100px] py-4 sm:py-[32px] '>
+        <div className='fixed z-10 bg-black flex w-full   justify-between items-center  px-[30px] sm:px-[40px] md:px-[100px] py-4 sm:py-[32px] '>
             <div>
                 <img src={logo} alt="logo" className='h-[32px] w-[46.22px]' />
             </div>
@@ -81,7 +81,7 @@ function Navbar() {
             {/* {
                 openSidebar && */}
 
-            <nav className={`fixed top-0 right-0 h-full w-1/2 max-w-[200px] bg-gray border z-4 sm:hidden
+            <nav className={`fixed top-0 right-0 h-full w-1/2 max-w-[200px] bg-dark  z-4 sm:hidden
     transition-transform duration-300 ease-in-out 
     ${openSidebar ? "translate-x-0" : "translate-x-full"}`}
             >
@@ -95,7 +95,7 @@ function Navbar() {
                             className={({ isActive }) =>
                                 `${isActive ? "bg-white text-dark" : "text-white"}
                                 capitalize rounded-[24px] gap-[10px] text-[16px] font-normal leading-[20px] tracking-[0px] py-2 px-[24px]
-                                transition-all duration-400 ease-in w-full `
+                                transition-all duration-400 ease-in w-full text-center `
                             }
                             onClick={() => { setTimeout(() => { setOpenSidebar(false) }, 50) }}
                         >
