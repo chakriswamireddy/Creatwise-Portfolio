@@ -9,6 +9,8 @@ import Footer from './sections/Footer'
 import HomePage from './pages/HomePage'
 import { Navigate, Route, Routes } from 'react-router'
 
+import {motion} from 'framer-motion'
+
 function App() {
   const [count, setCount] = useState(0)
 
