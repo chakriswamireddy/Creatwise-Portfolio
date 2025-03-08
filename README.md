@@ -12,11 +12,13 @@ This repository contains a **modern portfolio** built using **React 19, Tailwind
 - **Fast Performance** – Vite ensures lightning-fast builds and optimized loading.  
 - **Navigation & Routing** – Implemented using `react-router-dom` for smooth page transitions.  
 - **Custom Components** – Includes reusable UI elements for consistency.  
+- **Framer Motion** - User Friendly and Interactive Animations
 
 ## 🛠 Technologies Used  
 - **React.js 19**  
 - **Tailwind CSS 4**  
 - **Swiper.js**  
+- **Framer Motion**
 - **React Router 7**  
 - **Vite**  
 
@@ -53,9 +55,9 @@ npm install
 # Start the development server
 npm run dev
 
+```
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
----
 Made with ❤️ by Chakradhar Swamireddy and contributors.
