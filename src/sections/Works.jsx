@@ -7,6 +7,9 @@ import ImgWorkCard from '../components/ImgWorkCard'
 import worksList from '../data/worksList'
 
 
+import {motion} from 'framer-motion'
+
+
 function Works() {
 
 
@@ -21,9 +24,18 @@ function Works() {
       {/* works cards */}
 
       <ul>
-        {worksList.length> 0 && worksList.map((item,i) => (
-          <li  key={i} >
-            <ImgWorkCard singleWork={item}/>
+        {worksList.length > 0 && worksList.map((item, i) => (
+          <li key={i} >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale:1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              className=""
+            >
+
+              <ImgWorkCard singleWork={item} />
+            </motion.div>
           </li>
         ))}
       </ul>

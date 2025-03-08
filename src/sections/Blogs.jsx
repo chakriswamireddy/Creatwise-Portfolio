@@ -12,6 +12,10 @@ import SingleBlog from '../components/SingleBlog'
 import blogsList from '../data/blogsList'
 import star from '../assets/expertise/starsvg.svg'
 
+
+import { motion } from 'framer-motion'
+
+
 function Blogs() {
 
 
@@ -30,7 +34,15 @@ function Blogs() {
             <ul>
                 {blogsList.length > 0 && blogsList.map((blog) => (
                     <li key={blog.id}>
-                        <SingleBlog blog={blog} />
+                        <motion.div
+                            initial={{ opacity: 0, scaleY: 0.5 }}
+                            whileInView={{ opacity: 1, scaleY: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                            className=""
+                        >
+                            <SingleBlog blog={blog} />
+                        </motion.div>
                     </li>
                 ))}
             </ul>

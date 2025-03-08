@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import PageTitle from '../shared/PageTitle'
 
+
+import {motion} from 'framer-motion'
+
+
 function FAQSection() {
 
     const faqs = [
@@ -29,25 +33,37 @@ function FAQSection() {
         <div className='my-16'>
             <PageTitle pageTitle={'Frequently asked questions'} />
 
-            <div className="mt-8 space-y-8">
-                {faqs.map((faq, index) => (
-                    <div key={index} className="">
-                        <button
-                            className=" text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-[500] leading-10 tracking-0 "
-                            onClick={() => toggleAccordion(index)}
-                        >
-                            {faq.question}
-                        </button>
-                        <div className={`overflow-hidden transition-[max-height] 
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                className=""
+            >
+
+
+
+                <div className="mt-8 space-y-8">
+                    {faqs.map((faq, index) => (
+                        <div key={index} className="">
+                            <button
+                                className=" text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-[500] leading-10 tracking-0 mb-2 "
+                                onClick={() => toggleAccordion(index)}
+                            >
+                                {faq.question}
+                            </button>
+                            <div className={`overflow-hidden transition-[max-height] 
                                  ${openIndex === index ? "max-h-40  scale-y-100  duration-[900ms] ease-[cubic-bezier(0.23,1,0.32,1)] delay-75"
-                                : "max-h-0 duration-[300ms]  scale-y-0 ease-[cubic-bezier(0.4,0,0.2,1)]"
-                            }`}
-                        >
-                            <p className="poppins-text-medium">{faq.answer}</p>
+                                    : "max-h-0 duration-[300ms]  scale-y-0 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                                }`}
+                            >
+                                <p className="poppins-text-medium">{faq.answer}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+
+            </motion.div>
 
         </div>
     )

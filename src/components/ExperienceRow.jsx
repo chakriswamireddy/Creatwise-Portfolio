@@ -4,7 +4,7 @@ function ExperienceRow({ singleExperience }) {
   return (
     <div className='flex justify-between items-center border-b border-b-white/50 py-2 '>
 
-      <p className=' w-[70%] font-[500] text-[25px] sm:text-[32px] leading-10 tracking-[0%]  '> {singleExperience?.role} </p>
+      <p className=' w-[60%] font-[500] text-[25px] sm:text-[32px] leading-10 tracking-[0%]  '> {singleExperience?.role} </p>
 
 
       <div className='flex flex-col items-end  w-max'>
