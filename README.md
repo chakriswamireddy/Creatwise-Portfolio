@@ -53,9 +53,9 @@ npm install
 # Start the development server
 npm run dev
 
+```
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
----
 Made with ❤️ by Chakradhar Swamireddy and contributors.
